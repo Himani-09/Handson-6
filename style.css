@@ -1,0 +1,167 @@
+@media screen and (min-width: 1000px) {
+    body {
+      background: url(shara_desert.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    .container {
+      display: grid;
+      /* 2 x 2 */
+      /* grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto); */
+      grid-template: 6rem auto / repeat(2, auto);
+      grid-template-areas:
+        "header header"
+        "about  cards";
+      gap: 1rem;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    .b1 {
+      /* grid-column: 1 / -1; */
+      grid-area: header;
+    }
+  
+    .b2 {
+      grid-area: about;
+      color: white;
+      padding: 0 4rem;
+    }
+  
+    .b3 {
+      grid-area: cards;
+      padding: 0 4rem;
+    }
+  
+    .navbar {
+      display: flex;
+      margin-top: 2rem;
+    }
+  
+    .logo img {
+      width: 5rem;
+      height: 4rem;
+      margin-left: 3rem;
+      padding-left: 1rem;
+    }
+  
+    .link {
+      display: flex;
+      align-items: center;
+      margin-right: 3rem;
+      position: absolute;
+      right: 0;
+    }
+  
+    .link ul {
+      display: flex;
+      color: white;
+    }
+  
+    ul li {
+      padding-right: 2rem;
+      list-style-type: none;
+    }
+  
+    .link img {
+      width: 3rem;
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 3rem;
+    }
+  
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 7rem;
+    }
+    p {
+      margin: 0;
+    }
+  
+    button {
+      background: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+      padding: 1rem 4rem;
+      border-radius: 30px;
+    }
+  
+    .b3 {
+      display: grid;
+      grid-template: repeat(2, auto) / repeat(2, auto);
+      gap: 1.5rem 2rem;
+      position: relative;
+    }
+  
+    .card {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 15px;
+      filter: brightness(80%);
+      transition: transform 250ms;
+    }
+  
+    .card:hover {
+      transform: translateY(-10px);
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .c1 {
+      background-image: url(pic-1.png);
+      border-radius: 15px;
+    }
+  
+     .c2 {
+      background-image: url(pic-2.png);
+      border-radius: 15px;
+    }
+     .c3 {
+      background-image: url(pic-3.png);
+      border-radius: 15px;
+    }
+     .c4 {
+      background-image: url(pic-4.png);
+      border-radius: 15px;
+    }
+  
+  
+    /* .card-one .text {
+      position: absolute;
+      top: 1rem;
+      left: 6rem;
+    }
+    .card-two .text {
+      position: absolute;
+      top: 1rem;
+      left: 22rem;
+    }
+    .card-three .text {
+      position: absolute;
+      left: 6rem;
+      bottom: 8rem;
+    }
+    .card-four .text {
+      position: absolute;
+      left: 22rem;
+      bottom: 8rem;
+    } */
+  
+    h3 {
+      padding-left: 2rem;
+      margin-bottom: 0;
+    }
+  
+    .text p {
+      padding-left: 2rem;
+    }
+  }
